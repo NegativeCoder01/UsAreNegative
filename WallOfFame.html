@@ -124,10 +124,58 @@
       gap: 1rem;
       margin-top: 2rem;
     }
+
+    .custom-card {
+      background-color: #1e1e1e;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      color: var(--text);
+      margin: 2rem auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      text-align: left;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #333;
+    }
+
+    .card-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .card-sub {
+      font-size: 0.9rem;
+      color: #888888;
+      margin-top: 0.25rem;
+    }
+
+    .card-body {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
-<!-- discord embed thingy idk-->
+<!-- discord embed thingy idk -->
 <meta property="og:title" content="Us Are Negative" />
 <meta property="og:description" content="The terrible website negative made for the Us Are Negative discord server" />
 <meta property="og:image" content="https://negativecoder01.github.io/UsAreNegative/assets/og-image.png" />
@@ -149,6 +197,25 @@
 
   <main>
     <h3>Nobody in the Wall Of Fame... yet...</h3>
+
+    <!-- Custom Card -->
+    <div class="custom-card">
+      <div class="card-header">
+        <img src="https://cdn.discordapp.com/avatars/883269530623815702/b7ad54abd5988ff5f0a0e5481c1c63f2.webp?size=128" alt="Profile Pic" class="card-avatar" />
+        <div class="card-info">
+          <div class="card-name">Eternity</div>
+          <div class="card-sub">Eternity456</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>Rewards: A custom role, and Wall Of Fame.</p>
+        <p>Reason: Being most active in the discord server.</p>
+        <br>
+        <p>I bestow upon The Majestic Mf, the Majestic Mf role. Thank you for being here! -Negative</p>
+      </div>
+    </div>
+
+    <!-- Button Row -->
     <div class="button-row">
       <a href="Home" class="custom-nav-button">Home</a>
       <a href="Support" class="custom-nav-button">Support</a>
