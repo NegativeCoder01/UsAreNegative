@@ -10,7 +10,7 @@
       --bg: #121212;
       --header-bg: #1c1c1c;
       --text: #eeeeee;
-      --accent: #a462d9; /* purplish */
+      --accent: #a462d9; 
       --discord-bg: #7289da;
       --discord-text: #36393e;
     }
@@ -99,13 +99,37 @@
       text-align: center;
       padding-top: 2rem;
     }
+
+    .custom-nav-button {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+      background-color: transparent;
+      border: 2px solid transparent;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
+    .custom-nav-button:hover {
+      background-color: var(--accent);
+      transform: scale(1.05);
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="site-title">Us Are Negative</div>
     <div class="nav-container">
-      <!-- Example buttons: just copy this <a> element and paste below to add more -->
       <a href="Home" class="nav-button">Home</a>
       <a href="About" class="nav-button">About</a>
       <a href="WallOfFame" class="nav-button">Wall Of Fame</a>
@@ -120,7 +144,12 @@
     <p>This is everything you need to know about our server plus info for our server</p>
     <br>
     <p>I have created this website for people who want to know more about this site, need help, or want to know info.</p>
-    <a href="Home" class="nav-button">Home</a>
+
+    <div class="button-row">
+      <a href="FAQ" class="custom-nav-button">FAQ</a>
+      <a href="Support" class="custom-nav-button">Support</a>
+      <a href="Rules" class="custom-nav-button">Rules</a>
+    </div>
   </main>
 </body>
 </html>
