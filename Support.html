@@ -124,15 +124,19 @@
       gap: 1rem;
       margin-top: 2rem;
     }
-    a:link {
-    color: #a463d6; /* unclicked link - purplish */
+    a.fancy-link:link {
+    color: #8827d3;
     }
-    a:visited {
-      color: #ff7edf; /* clicked/visited link - bright pink */
+
+    a.fancy-link:visited {
+      color: #c10cd1;
     }
-    a:hover, a:focus {
-    text-decoration: underline;
-    color: #e29ff9; /* soft lavender highlight on hover */
+
+    a.fancy-link:hover {
+      color: #d65cff;
+      text-decoration: underline;
+      /* bonus flair if you’re feeling spicy: */
+      transition: 0.3s ease;
     }
   </style>
 </head>
@@ -159,7 +163,7 @@
 
   <main>
     <h1>Support</h1>
-    <p>For support either go to <a href="https://discord.com/channels/1356458695646777484/1376958483378868254">#❗reports</a> or <a href="https://discord.com/channels/1356458695646777484/1380413515243716709">#❔questions-and-answers</a> depending on your situation.</p>
+    <p>For support either go to <a href="https://discord.com/channels/1356458695646777484/1376958483378868254" class="fancy-link">#❗reports</a> or <a href="https://discord.com/channels/1356458695646777484/1380413515243716709" class="fancy-link">#❔questions-and-answers</a> depending on your situation.</p>
     <div class="button-row">
       <a href="Home" Class="custom-nav-button">Home</a>
       <a href="Events" class="custom-nav-button">Upcoming Events</a>
