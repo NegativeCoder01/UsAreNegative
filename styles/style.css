@@ -116,3 +116,16 @@ main {
   gap: 1rem;
   margin-top: 2rem;
 }
+a.fancy-link-purple:link {
+    color: #7289da;
+}
+
+a.fancy-link-purple:visited {
+    color: #b30fc2;
+}
+
+a.fancy-link-purple:hover {
+    color: #6e48f5;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
